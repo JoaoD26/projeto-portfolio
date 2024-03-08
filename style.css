@@ -32,7 +32,7 @@ p, h1, h3{
 p{
     font-weight: 400;
 }
-.header, .scrolled{
+.scrolled, .unscrolled{
     height: 8%;
     display: flex;
     justify-content: flex-end;
@@ -42,7 +42,7 @@ p{
     top: 0;
     z-index: 1;
 }
-.header{
+.scrolled{
     background-color: #101014;
 }
 main{
@@ -108,9 +108,6 @@ nav{
 }
 .nav-a-claro{
     color: var(--cor-texto-claro);
-}
-.nav-a-scrolled{
-    color: var(--cor-a);
 }
 .projeto{
     width: 100%;

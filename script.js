@@ -4,16 +4,20 @@ let headerStatus = 'unscrolled'
 let img = document.getElementById('btn-cor')
 let statusCor = ''
 
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
     statusCor = 'escuro'
     img.className = 'escuro'
+    img.src = "./img/modo_escuro.png"
 } else {
     statusCor = 'claro'
     img.className = 'claro'
+    img.src = "./img/modo_claro_unscrolled.png"
 }
+
 window.onscroll = function() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        header.className = "header";
+        header.className = "scrolled";
         headerStatus = 'scrolled'
 
         if (img.className === 'escuro') {
@@ -23,11 +27,11 @@ window.onscroll = function() {
         } else if (img.className === 'claro') {
             img.src = './img/modo_claro.png'
             a.forEach(function(elemento) {
-                elemento.className = 'nav-a-scrolled';
+                elemento.className = 'nav-a-escuro';
             });
         }
     } else {
-        header.className = "scrolled";
+        header.className = "unscrolled";
         headerStatus = 'unscrolled'
         if (img.className === 'escuro') {
             a.forEach(function(elemento) {
@@ -42,9 +46,8 @@ window.onscroll = function() {
     }
 };
 function trocarcor(){
-    let a = document.querySelectorAll('a')
     let selecao = img.src
-    if (selecao.includes('modo_escuro' || statusCor == 'escuro')){
+    if (selecao.includes('modo_escuro') || statusCor == 'escuro'){
         if (headerStatus === 'unscrolled'){
             img.src = './img/modo_claro_unscrolled.png'
             img.className = 'claro'
