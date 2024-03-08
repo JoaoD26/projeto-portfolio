@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="scrolled">
+        <nav>
+            <div class="navbar navbar-btn" style="display: flex; justify-content: flex-start">
+                <button style="background: none; border: none;" id="btn" onclick="trocarcor()"><img src="./img/modo_escuro.png" id="btn-cor" class="escuro"></button>
+            </div>
+            <div class="navbar">
+                <a href="#main" class="nav-a-escuro" id="nav-a">Sobre Mim</a>
+                <a href="#projetos" class="nav-a-escuro" id="nav-a">Projetos</a>
+                <a href="#contato" class="nav-a-escuro" id="nav-a">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="sobre-mim-texto">
+                <h3 style="width: 43%;">
+                    Olá, meu nome é <h1 style="font-size: xx-large;">João Duarte</h1>
+                </h3>
+                <p style="font-size: large;" class="sobre-mim-p">
+                    Atualmente curso o quinto semestre do curso de Análise e Desenvolvimento de Sistemas na faculdade Eniac, tenho 19 anos. 
+                </p>
+                <p style="font-size: large;" class="sobre-mim-p">No meu curso eu aprendi um pouco sobre Desenvolvimento Web, Mobile, de Jogos, Metodologias Ágeis e Banco de Dados SQL e NoSQL, mas venho também estudando por fora a área de Dados.</p>
+                <div class="skills-texto">
+                    <h2 class="destaque">Hard Skills:</h2>
+                    <p><span class="destaque">Linguagens:</span> Javascript, PHP, Java, Python, HTML, CSS, JSON, XML, SQL, MongoDB</p>
+                    <p><span class="destaque">Ferramentas:</span> Visual Studio Code, Jupyter, PHPMyAdmin, PostgreSQL, MySQL Workbench, Microsoft Azure, PowerBI, Excel</p>
+                </div>
+            </div>
+            <img class="foto" src="./img/foto-2.png">
+            
+        </section>
+        <section class="projetos" id="projetos">
+            <h1 class="meus-projetos">Meus Projetos</h1>
+            <div class="projeto" >
+                <img src="./img/site_adega.png" class="img-proj">
+                <div class="proj-texto">
+                    <h3>Site de E-commerce de Bebidas</h3>
+                    <p style="font-size: small; margin-right: 5px;"> Site de E-commerce contendo uma aba de login/cadastro, uma aba de vitrine dos produtos, uma aba de tela de compra, e uma aba restrita aos funcionários para manipulação do estoque do site. O site conta com uma API própria feita em PHP, e um banco de dados feito em MariaDB. (Projeto em andamento)</p>
+                </div>
+                <div class="proj-button">
+                    <div class="proj-button-line">
+                        <a href="https://github.com/JoaoD26/adega_do_vale" target="blank"><img src="./img/github_logo.png" class="logo githubbtn githubbtn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto" >
+                <img src="./img/site_cripto.png" class="img-proj">
+                <div class="proj-texto">
+                    <h3>Site de Criptografia</h3>
+                    <p style="font-size: small; margin-right: 5px;"> Site realizado como desafio final do curso de Iniciante em Programação Alura + Oracle. Contém as funcionalidades de criptografar, descriptograr, e copiar o texto gerado para a área de transferência, e segue o design e as normas fornecidas pelo desafio.</p>
+                </div>
+                <div class="proj-button">
+                    <div class="proj-button-line">
+                        <a href="https://desafio-alura-eight.vercel.app/" target="_blank" class="logo-a"><img src="./img/site.png" class="logo sitebtn dois-botoes" style="position: relative; top: 1px;"></a>
+                        <a href="https://github.com/JoaoD26/alura_challenge_cripto" target="_blank" class="logo-a"><img src="./img/github_logo.png" class="logo githubbtn dois-botoes"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto" >
+                <img src="./img/age_calculator.png" class="img-proj">
+                <div class="proj-texto">
+                    <h3>Aplicativo de cálculo de idade em dias</h3>
+                    <p style="font-size: small; margin-right: 5px;"> Aplicativo que registra a data adicionada nos campos e calcula a quantidade de anos, meses e dias a partir desta data.</p>
+                </div>
+                <div class="proj-button">
+                    <div class="proj-button-line">
+                        <a href="https://age-calculator-coral.vercel.app/" target="_blank" class="logo-a"><img src="./img/site.png" class="logo sitebtn dois-botoes" style="position: relative; top: 1px;"></a>
+                        <a href="https://github.com/JoaoD26/ageCalculator" target="_blank" class="logo-a"><img src="./img/github_logo.png" class="logo githubbtn dois-botoes"></a>  
+                    </div>
+                </div>
+            </div>
+            <div class="projeto" >
+                <img src="./img/api_dio.png" class="img-proj">
+                <div class="proj-texto">
+                    <h3>Programa de ETL simples</h3>
+                    <p style="font-size: small; margin-right: 5px;"> Programa em Python que extrai os dados de um arquivo csv, se conecta com a API da OpenAI, e com ela, enriquece a tabela csv.</p>
+                </div>
+                <div class="proj-button">
+                    <div class="proj-button-line">
+                        <a href="https://github.com/JoaoD26/api-dio" target="_blank"><img src="./img/github_logo.png" class="logo githubbtn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto" >
+                <img src="./img/relatorio.png" class="img-proj">
+                <div class="proj-texto">
+                    <h3>Relatório em PowerBI</h3>
+                    <p style="font-size: small; margin-right: 5px;"> Relatório feito no PowerBI buscando dados de um banco de dados Azure, que depois de tratados, demonstram relações entre funcionários, cidades, projetos, horas trabalhadas e horas por projeto. </p>
+                </div>
+                <div class="proj-button">
+                    <div class="proj-button-line">
+                        <a href="https://github.com/JoaoD26/relatorio-dio" target="_blank"><img src="./img/github_logo.png" class="logo githubbtn"></a>  
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+    </main>
+    <footer id="contato">
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-duarte-99a921204/" target="_blank">
+                <img src="./img/linkedin_logo.png" class="logo-footer">LinkedIn</a>
+            <a href="https:/github.com/JoaoD26" target="_blank">
+                <img src="./img/github_logo.png" class="logo-footer"> Github</a>
+            <a href="https://wa.me/+5511911041100" target="_blank">
+                <img src="./img/whatsapp_logo.png" class="logo-footer">Whatsapp</a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
