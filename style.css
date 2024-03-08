@@ -235,7 +235,7 @@ a:hover, h1{
 }
 @media only screen and (min-width: 1200px ) and ( min-height: 770px) {
     .projetos, .sobre-mim{
-        width: 60%;
+        width: 80%;
     }
     .projetos{
         align-items: center;
@@ -301,6 +301,7 @@ a:hover, h1{
     .proj-texto{
         font-size: smaller;
         width: 95%;
+        text-align: center;
     }
     .img-proj{
         margin-top: 15px;
@@ -326,7 +327,7 @@ a:hover, h1{
         right: 20%;
     }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
     nav{
         justify-content: flex-end;
     }
