@@ -11,7 +11,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     statusCor = 'claro'
     img.className = 'claro'
 }
-alert(statusCor)
 window.onscroll = function() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         header.className = "header";
