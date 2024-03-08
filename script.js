@@ -5,11 +5,11 @@ let img = document.getElementById('btn-cor')
 let statusCor = ''
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
-    statusCor = 'claro'
-    img.className = 'claro'
-} else {
     statusCor = 'escuro'
     img.className = 'escuro'
+} else {
+    statusCor = 'claro'
+    img.className = 'claro'
 }
 alert(statusCor)
 window.onscroll = function() {
