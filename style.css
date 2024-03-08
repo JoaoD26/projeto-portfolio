@@ -272,7 +272,7 @@ a:hover, h1{
         right: 8%;
     }
 }
-@media only screen and (max-width: 625px){
+@media only screen and (max-width: 730px){
     nav{
         justify-content: space-between;
     }
